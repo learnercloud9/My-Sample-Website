@@ -3,15 +3,19 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "No dependencies required for static website"
+      - echo "No dependencies required"
   build:
     commands:
-      - echo "Build phase - copying files"
+      - echo "Build phase started"
+      - ls -al
   post_build:
     commands:
       - echo "Build completed successfully"
 
 artifacts:
   files:
-    - '**/*'
+    - index.html
+    - style.css
+    - appspec.yml
+    - scripts/**/*
   discard-paths: no
