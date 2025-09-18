@@ -4,18 +4,23 @@ phases:
   install:
     commands:
       - echo "No dependencies required"
+  
   build:
     commands:
       - echo "Build phase started"
-      - ls -al
+      - pwd
+      - echo "=== Source files check ==="
+      - ls -la
+      - find . -name "*.html" -o -name "*.css" -o -name "*.yml" | head -10
+  
   post_build:
     commands:
       - echo "Build completed successfully"
+      - echo "=== Pre-artifact file verification ==="
+      - ls -la
 
 artifacts:
   files:
-    - index.html
-    - style.css
-    - appspec.yml
-    - scripts/**/*
+    - '**/*'  # सभी files include करेगा
+  name: portfolio-build-$(date +%Y%m%d-%H%M%S)
   discard-paths: no
