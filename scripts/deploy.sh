@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "Copying new files..."
-cp -r * /var/www/html/
-chown -R apache:apache /var/www/html
+sudo apt update
+sudo apt install nginx -y
 
