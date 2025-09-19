@@ -1,11 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Sample AWS CI/CD Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mukul Kumar Sharma | Cloud Engineer</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS library -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16"></script>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-  <h1>Hello from Mukul’s CI/CD Project 🚀</h1>
-  <p>This website is deployed automatically using AWS CodePipeline!</p>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Cloud <span>Engineer</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <img src="images/profile.jpg" alt="Mukul Kumar Sharma" class="profile-pic"/>
+      <h2 class="profile-name">Mukul Kumar Sharma</h2>     
+      <h1 id="typed"></h1>
+      <p class="location"><i class="fas fa-map-marker-alt"></i> Vill-Rajour, Anupshahr, Bulandshahr, Uttar Pradesh - 202390</p>
+      <div class="contact-links">
+        <a href="mailto:mukulkumarsharma8@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/mukul-sharma-693810217" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/learnercloud9" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="tel:+919536490912"><i class="fas fa-phone"></i></a>
+      </div>
+      <a href="resume.pdf" class="btn"><i class="fas fa-download"></i> Download Resume</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="about" id="about" data-aos="fade-up">
+    <div class="container">
+      <h2><i class="fas fa-user"></i> Career Objective</h2>
+      <p>
+        Aspiring Cloud Engineer with hands-on experience in AWS, Azure, Linux, Docker, Kubernetes, and automation scripting. 
+        Passionate about designing scalable cloud solutions, DevOps practices, and system reliability.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <!-- Include Font Awesome CDN in <head> section of your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<section class="skills" id="skills" data-aos="fade-up">
+  <div class="container">
+    <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-circle" data-skill="AWS" data-percent="90">
+        <i class="fab fa-aws"></i> AWS
+      </div>
+      <div class="skill-circle" data-skill="Azure" data-percent="75">
+        <i class="fab fa-microsoft"></i> Azure
+      </div>
+      <div class="skill-circle" data-skill="Docker" data-percent="85">
+        <i class="fab fa-docker"></i> Docker
+      </div>
+      <div class="skill-circle" data-skill="Python" data-percent="80">
+        <i class="fab fa-python"></i> Python
+      </div>
+      <div class="skill-circle" data-skill="Networking" data-percent="85">
+        <i class="fas fa-network-wired"></i> Networking
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Experience -->
+  <section class="experience" id="experience" data-aos="fade-up">
+    <div class="container">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>AWS Cloud Intern</h3>
+          <span>Sep 2024 – Present | Tasshee Linux Services Pvt. Ltd.</span>
+          <p>
+            • Managed EC2, S3, IAM, RDS, ELB, Auto Scaling & CloudWatch alerts.<br>
+            • Wrote Python scripts for monitoring and automation.<br>
+            • Designed secure VPC architectures with NAT, NACLs, and Route Tables.<br>
+            • Hands-on with Docker & containerized applications deployment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects" data-aos="fade-up">
+    <div class="container">
+      <h2><i class="fas fa-folder-open"></i> Projects</h2>
+      <div class="project-card">
+        <h3><i class="fas fa-code-branch"></i> CI/CD Pipeline on AWS</h3>
+        <p>Automated deployments using GitHub Actions & AWS CodeDeploy.</p>
+        <a href="https://github.com/learnercloud9" target="_blank">View Code</a>
+      </div>
+      <div class="project-card">
+        <h3><i class="fas fa-server"></i> Three-Tier App on AWS</h3>
+        <p>Frontend/backend on EC2, database on RDS, secured with VPC & ALB.</p>
+        <a href="https://github.com/learnercloud9" target="_blank">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact" data-aos="fade-up">
+    <div class="container">
+      <h2><i class="fas fa-address-book"></i> Contact</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:mukulkumarsharma8@gmail.com">mukulkumarsharma8@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+919536490912">+91-9536490912</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/mukul-sharma-693810217" target="_blank">linkedin.com/in/mukul-sharma</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/learnercloud9" target="_blank">github.com/learnercloud9</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div>© 2025 Mukul Kumar Sharma</div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ["Mukul Kumar Sharma", "Cloud Engineer", "AWS | Azure | DevOps Enthusiast"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Skills Circular Charts
+    const circles = document.querySelectorAll('.skill-circle');
+    window.addEventListener('scroll', () => {
+      circles.forEach(circle => {
+        const top = circle.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (top < windowHeight - 50) {
+          circle.style.background = `conic-gradient(#0d47a1 ${circle.dataset.percent}%, #eee 0%)`;
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
